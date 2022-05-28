@@ -41,8 +41,8 @@
     border-radius: 50%;
     background-image: linear-gradient(
         to top right,
-        var(--main-color),
-        var(--second-color)
+        #ffa500,
+        #ffa500
     );
     position: absolute;
     left: -50%;

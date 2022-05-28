@@ -47,35 +47,35 @@ const chartOptions = {
 
 const topCustomers = {
     head: [
-        'user',
-        'total orders',
-        'total spending'
+        'Số Vé',
+        'Ngày Sử Dụng',
+        'Ngày Xuất Vé'
     ],
     body: [
         {
-            "username": "john doe",
-            "order": "490",
-            "price": "$15,870"
+            "username": "123456789034",
+            "order": "14/04/2021",
+            "price": "14/04/2021"
         },
         {
-            "username": "frank iva",
-            "order": "250",
-            "price": "$12,251"
+            "username": "236784631642",
+            "order": "14/04/2021",
+            "price": "14/04/2021"
         },
         {
-            "username": "anthony baker",
-            "order": "120",
-            "price": "$10,840"
+            "username": "487621489474",
+            "order": "14/04/2021",
+            "price": "14/04/2021"
         },
         {
-            "username": "frank iva",
-            "order": "110",
-            "price": "$9,251"
+            "username": "156464891479",
+            "order": "14/04/2021",
+            "price": "14/04/2021"
         },
         {
-            "username": "anthony baker",
-            "order": "80",
-            "price": "$8,840"
+            "username": "201649631896",
+            "order": "14/04/2021",
+            "price": "14/04/2021"
         }
     ]
 }
@@ -94,56 +94,55 @@ const renderCusomerBody = (item, index) => (
 
 const latestOrders = {
     header: [
-        "order id",
-        "user",
-        "total price",
-        "date",
-        "status"
+        "Số Vé",
+        "Ngày Sử Dụng",
+        "Ngày Xuất Vé",
+        "Cổng Check-in",
+        "Tình Trạng Sử Dụng"
     ],
     body: [
         {
-            id: "#OD1711",
-            user: "john doe",
-            date: "17 Jun 2021",
-            price: "$900",
-            status: "shipping"
+            id: "123456789034",
+            user: "14/04/2021",
+            date: "Cổng 1",
+            price: "14/04/2021",
+            status: "Đã Sử Dụng"
         },
         {
-            id: "#OD1712",
-            user: "frank iva",
-            date: "1 Jun 2021",
-            price: "$400",
-            status: "paid"
+            id: "236784631642",
+            user: "14/04/2021",
+            date: "Cổng 1",
+            price: "14/04/2021",
+            status: "Chưa Sử Dụng"
         },
         {
-            id: "#OD1713",
-            user: "anthony baker",
-            date: "27 Jun 2021",
-            price: "$200",
-            status: "pending"
+            id: "487621489474",
+            user: "14/04/2021",
+            date: "Cổng 1",
+            price: "14/04/2021",
+            status: "Hết Hạn"
         },
         {
-            id: "#OD1712",
-            user: "frank iva",
-            date: "1 Jun 2021",
-            price: "$400",
-            status: "paid"
+            id: "156464891479",
+            user: "14/04/2021",
+            date: "Cổng 1",
+            price: "14/04/2021",
+            status: "Hết Hạn"
         },
         {
-            id: "#OD1713",
-            user: "anthony baker",
-            date: "27 Jun 2021",
-            price: "$200",
-            status: "refund"
+            id: "156464891479",
+            user: "14/04/2021",
+            date: "Cổng 1",
+            price: "14/04/2021",
+            status: "Đã Sử Dụng"
         }
     ]
 }
 
 const orderStatus = {
-    "shipping": "primary",
-    "pending": "warning",
-    "paid": "success",
-    "refund": "danger"
+    "Chưa Sử Dụng": "warning",
+    "Đã Sử Dụng": "success",
+    "Hết Hạn": "danger"
 }
 
 const renderOrderHead = (item, index) => (
@@ -168,7 +167,7 @@ const Dashboard = () => {
 
     return (
         <div>
-            <h2 className="page-header">Dashboard</h2>
+            <h2 className="page-header">Thống Kê</h2>
             <div className="row">
                 <div className="col-6">
                     <div className="row">
@@ -205,7 +204,7 @@ const Dashboard = () => {
                 <div className="col-4">
                     <div className="card">
                         <div className="card__header">
-                            <h3>top customers</h3>
+                            <h3>Thông Tin Vé</h3>
                         </div>
                         <div className="card__body">
                             <Table
@@ -223,7 +222,7 @@ const Dashboard = () => {
                 <div className="col-8">
                     <div className="card">
                         <div className="card__header">
-                            <h3>latest orders</h3>
+                            <h3>Tình Trạng Vé</h3>
                         </div>
                         <div className="card__body">
                             <Table

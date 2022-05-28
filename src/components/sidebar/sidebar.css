@@ -49,8 +49,8 @@
     border-radius: var(--border-radius);
     background-image: linear-gradient(
         to right,
-        var(--main-color),
-        var(--second-color)
+        orange,
+        orange
     );
     color: var(--txt-white);
 }
