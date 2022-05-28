@@ -2,7 +2,7 @@
     {
         "display_name": "Trang Chủ",
         "route": "/",
-        "icon": "bx bx-category-alt"
+        "icon": "bx bx-home"
     },
     {
         "display_name": "Quản lý vé",
@@ -11,13 +11,13 @@
     },
     {
         "display_name": "Đối soát vé",
-        "route": "/products",
-        "icon": "bx bx-package"
+        "route": "/checking",
+        "icon": "bx bx-tag-alt"
     },
     {
-        "display_name": "Cài Đặt",
-        "route": "/orders",
-        "icon": "bx bx-cart"
+        "display_name": "Gói Dịch Vụ",
+        "route": "/service",
+        "icon": "bx bx-server"
     }
     
 ]
