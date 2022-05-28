@@ -4,31 +4,37 @@ import Table from '../components/table/Table'
 
 import customerList from '../assets/JsonData/customers-list.json'
 
+
 const customerTableHead = [
     'STT',
-    'name',
-    'email',
-    'phone',
-    'total orders',
-    'total spend',
-    'location'
+    'Booking code',
+    'Số vé',
+    'Tên sự kiện',
+    'Tình trạng sử dụng',
+    'Ngày sử dụng',
+    'Ngày Xuất Vé',
+    'Cổng Check-in'
+    
 ]
 
 const renderHead = (item, index) => <th key={index}>{item}</th>
 
 const renderBody = (item, index) => (
     <tr key={index}>
-        <td>{item.id}</td>
-        <td>{item.name}</td>
-        <td>{item.email}</td>
-        <td>{item.phone}</td>
-        <td>{item.total_orders}</td>
-        <td>{item.total_spend}</td>
-        <td>{item.location}</td>
+        <td>{item.STT}</td>
+        <td>{item.Bookingcode}</td>
+        <td>{item.Sove}</td>
+        <td>{item.Name}</td>
+        <td>{item.Status}</td>
+        <td>{item.Usedate}</td>
+        <td>{item.Releasedate}</td>
+        <td>{item.Checkin}</td>
+
     </tr>
 )
 
-const Customers = () => {
+
+const Ticket = () => {
     return (
         <div>
             <h2 className="page-header">
@@ -39,7 +45,7 @@ const Customers = () => {
                     <div className="card">
                         <div className="card__body">
                             <Table
-                                limit='12'
+                                limit='6'
                                 headData={customerTableHead}
                                 renderHead={(item, index) => renderHead(item, index)}
                                 bodyData={customerList}
@@ -53,4 +59,4 @@ const Customers = () => {
     )
 }
 
-export default Customers
+export default Ticket

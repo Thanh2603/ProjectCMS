@@ -16,10 +16,10 @@ import statusCards from '../assets/JsonData/status-card-data.json'
 
 const chartOptions = {
     series: [{
-        name: 'Online Customers',
+        name: 'Vé đã sử dụng',
         data: [40,70,20,90,36,80,30,91,60]
     }, {
-        name: 'Store Customers',
+        name: 'Vé chưa sử dụng',
         data: [40, 30, 70, 80, 40, 16, 40, 20, 51, 10]
     }],
     options: {
@@ -161,7 +161,7 @@ const renderOrderBody = (item, index) => (
     </tr>
 )
 
-const Dashboard = () => {
+const Home = () => {
 
     const themeReducer = useSelector(state => state.ThemeReducer.mode)
 
@@ -242,4 +242,4 @@ const Dashboard = () => {
     )
 }
 
-export default Dashboard
+export default Home

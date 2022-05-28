@@ -6,7 +6,7 @@
     },
     {
         "display_name": "Quản lý vé",
-        "route": "/customers",
+        "route": "/ticket",
         "icon": "bx bx-user-pin"
     },
     {
