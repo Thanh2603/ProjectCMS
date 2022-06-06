@@ -16,7 +16,7 @@ const customerTableHead = [
     'Cổng Check-in'
     
 ]
-
+// Cmt
 const renderHead = (item, index) => <th key={index}>{item}</th>
 
 const renderBody = (item, index) => (
