@@ -14,6 +14,8 @@ import Badge from '../components/badge/Badge'
 
 import statusCards from '../assets/JsonData/status-card-data.json'
 
+// Home page
+
 const chartOptions = {
     series: [{
         name: 'Vé đã sử dụng',

@@ -4,6 +4,7 @@ import Table from '../components/table/Table'
 
 import customerList from '../assets/JsonData/product-list.json'
 
+// Checking page
 
 const customerTableHead = [
     'STT',

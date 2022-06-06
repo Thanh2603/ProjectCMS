@@ -4,6 +4,7 @@ import Table from '../components/table/Table'
 
 import customerList from '../assets/JsonData/service-list.json'
 
+// Servicepack page
 
 const customerTableHead = [
     'STT',

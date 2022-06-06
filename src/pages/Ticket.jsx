@@ -4,7 +4,7 @@ import Table from '../components/table/Table'
 
 import customerList from '../assets/JsonData/customers-list.json'
 
-
+// TicketPage
 const customerTableHead = [
     'STT',
     'Booking code',
@@ -16,7 +16,7 @@ const customerTableHead = [
     'Cổng Check-in'
     
 ]
-// Cmt
+
 const renderHead = (item, index) => <th key={index}>{item}</th>
 
 const renderBody = (item, index) => (
